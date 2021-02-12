@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: #8f8f8f
 }
 
 h1,
@@ -14,15 +15,12 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-}
-
-p {
-    color: #8f8f8f;
+    color: black;
 }
 
 /* UTILITY */
 .container {
-    width: 80%;
+    width: 1170px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -33,6 +31,14 @@ p {
     clear: both;
 }
 
+.bold {
+    font-weight: bold;
+    color: black;
+}
+
+.red {
+    color: red;
+}
 
 /* HEADER */
 header.main {
@@ -66,7 +72,7 @@ nav .main-menu {
 /* MAIN TOP */
 main.top {
     margin-bottom: 20px;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
     background-color: #feebe4;
     background-image: url(../img/banner.jpg);
@@ -81,8 +87,12 @@ main.top:hover {
 
 .top .image-texts {
     width: 50%;
-    padding-top: 220px;
-    padding-left: 30px;
+    padding-top: 340px;
+    padding-left: 40px;
+    color: white;
+}
+
+.top .image-texts h2 {
     color: white;
 }
 
@@ -106,8 +116,7 @@ main.top:hover {
 
 .box .side-column, 
 .box .column {
-    height: 510px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     float: left;
 }
 
@@ -117,25 +126,48 @@ main.top:hover {
 
 .box .column {
     width: 50%;
-    margin: 0 1%;
+    margin-left: 1%;
+    margin-right: 1%;
 } 
 
 .box .side-column .column-image, 
 .box .column .column-image {
     border-radius: 10px;
-    height: 200px;
+    height: 250px;
+    background-repeat: no-repeat; 
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
 
-.left {
+.box .side-column .column-image:hover, 
+.box .column .column-image:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+}
+
+.column-image.left {
     background-image: url(../img/img-1.jpg);
+    background-position: center;
     background-size: contain;
+}
+
+.column-image.center  {
+    background-image: url(../img/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.column-image.right {
+    background-image: url(../img/img-3.jpg);
+    background-size: contain;
+    background-position: center;
 }
 
 
 /* FOOTER */
 footer {
-    height: 50px;
-    background: #8700fd;
+    text-align: center;
     margin-bottom: 20px;
+}
+
+footer p {
+    color: black;
 }
