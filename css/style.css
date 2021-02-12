@@ -15,6 +15,11 @@ h5,
 h6 {
     font-weight: 600;
 }
+
+p {
+    color: #8f8f8f;
+}
+
 /* UTILITY */
 .container {
     width: 80%;
@@ -83,21 +88,20 @@ main.top:hover {
 
 .top .image-texts p {
     line-height: 22px;
+    color: white;
 }
 
 /* MAIN CONTENT */
 .box {
-    background: #3286ff;
     margin-bottom: 10px;
 }
 
-.box > * {
-    background: #accee7;
+.box header {
+    margin-bottom: 20px;
 }
 
-.box header {
-    height: 50px;
-    margin-bottom: 20px;
+.box header h2 {
+    font-size: 30px;
 }
 
 .box .side-column, 
@@ -115,6 +119,19 @@ main.top:hover {
     width: 50%;
     margin: 0 1%;
 } 
+
+.box .side-column .column-image, 
+.box .column .column-image {
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.left {
+    background-image: url(../img/img-1.jpg);
+    background-size: contain;
+}
+
 
 /* FOOTER */
 footer {
