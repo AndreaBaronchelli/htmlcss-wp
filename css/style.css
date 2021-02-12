@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* UTILITY */
@@ -18,13 +19,34 @@
     clear: both;
 }
 
+
 /* HEADER */
 header.main {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 100px;
-    background-color: #e579e5;
 
+}
+
+.main .main-logo img {
+    height: 60px;
+}
+
+nav .main-menu {
+    list-style: none;
+}
+
+.main-menu > li {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.main-menu > li a {
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.main-menu > li a:hover {
+    color: black;
 }
 
 /* MAIN TOP */
